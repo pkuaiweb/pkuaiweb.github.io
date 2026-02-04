@@ -1,0 +1,42 @@
+{
+  "title": "Projects",
+  "items": [
+    {
+      "title": "Project Title",
+      "desc": "Project description and details",
+      "link": "http://example.com/",
+      "img": "/img/placeholder.png"
+    },
+    {
+      "title": "Project Title",
+      "desc": "Project description and details",
+      "link": "http://example.com/",
+      "img": "/img/placeholder.png"
+    },
+    {
+      "title": "Project Title",
+      "desc": "Project description and details",
+      "link": "http://example.com/",
+      "img": "/img/placeholder.png"
+    },
+    {
+      "title": "Project Title",
+      "desc": "Project description and details",
+      "link": "http://example.com/",
+      "img": "/img/placeholder.png"
+    },
+    {
+      "title": "Project Title",
+      "desc": "Project description and details",
+      "link": "http://example.com/",
+      "img": "/img/placeholder.png"
+    },
+    {
+      "title": "Project Title",
+      "desc": "Project description and details",
+      "link": "http://example.com/",
+      "img": "/img/placeholder.png"
+    }
+  ]
+}
+

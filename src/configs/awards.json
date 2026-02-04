@@ -1,0 +1,9 @@
+{
+  "title": "Awards",
+  "items": [
+    { "title": "Award 1", "desc": "Award description", "img": "/img/placeholder.png", "link": "http://example.com/" },
+    { "title": "Award 2", "desc": "Award description", "img": "/img/placeholder.png", "link": "http://example.com/" },
+    { "title": "Award 3", "desc": "Award description", "img": "/img/placeholder.png", "link": "http://example.com/" }
+  ]
+}
+

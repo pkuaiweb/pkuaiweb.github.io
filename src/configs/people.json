@@ -1,0 +1,50 @@
+{
+  "title": "Our Team",
+  "principalInvestigatorTitle": "Principal Investigator",
+  "principalInvestigator": {
+    "name": "Name",
+    "role": "Position/Title",
+    "bio": "Brief biography and research interests",
+    "email": "http://example.com/",
+    "website": "http://example.com/",
+    "avatar": "/img/placeholder.png"
+  },
+  "sections": [
+    {
+      "title": "PhD Students",
+      "people": [
+        { "name": "Name", "role": "PhD Student", "avatar": "/img/placeholder.png" },
+        { "name": "Name", "role": "PhD Student", "avatar": "/img/placeholder.png" },
+        { "name": "Name", "role": "PhD Student", "avatar": "/img/placeholder.png" }
+      ]
+    },
+    {
+      "title": "Master Students",
+      "people": [
+        { "name": "Name", "role": "Master Student", "avatar": "/img/placeholder.png" },
+        { "name": "Name", "role": "Master Student", "avatar": "/img/placeholder.png" },
+        { "name": "Name", "role": "Master Student", "avatar": "/img/placeholder.png" },
+        { "name": "Name", "role": "Master Student", "avatar": "/img/placeholder.png" }
+      ]
+    },
+    {
+      "title": "Interns",
+      "people": [
+        { "name": "Name", "role": "Intern", "avatar": "/img/placeholder.png" },
+        { "name": "Name", "role": "Intern", "avatar": "/img/placeholder.png" },
+        { "name": "Name", "role": "Intern", "avatar": "/img/placeholder.png" }
+      ]
+    },
+    {
+      "title": "Alumni",
+      "people": [
+        { "name": "Name", "role": "Graduated", "avatar": "/img/placeholder.png" },
+        { "name": "Name", "role": "Graduated", "avatar": "/img/placeholder.png" },
+        { "name": "Name", "role": "Graduated", "avatar": "/img/placeholder.png" },
+        { "name": "Name", "role": "Graduated", "avatar": "/img/placeholder.png" },
+        { "name": "Name", "role": "Graduated", "avatar": "/img/placeholder.png" }
+      ]
+    }
+  ]
+}
+
