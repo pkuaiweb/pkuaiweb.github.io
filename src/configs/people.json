@@ -16,7 +16,9 @@
       "people": [
         { "name": "刘牧耕", "role": "PhD Student", "grade": "四年级", "email": "lmg@pku.edu.cn", "website": "http://morgen52.github.io", "avatar": "/img/people/liumugeng.jpg" },
         { "name": "申海洋", "role": "PhD Student", "grade": "四年级", "email": "hiyoungshen@gmail.com", "website": "https://eachsheep.space", "avatar": "/img/people/shenhaiyang.jpg" },
+        { "name": "韩宇栋", "role": "PhD Student", "grade": "四年级", "email": "hanyd@pku.edu.cn", "website": "http://hanyd.site", "avatar": "/img/people/hanyudong.jpg" },
         { "name": "井文淳", "role": "PhD Student", "grade": "三年级", "email": "jingwenchun@stu.pku.edu.cn", "avatar": "/img/people/jingwenchun.jpg" },
+        { "name": "黄小龙", "role": "PhD Student", "grade": "三年级", "email": "h.xl@pku.edu.cn", "avatar": "/img/people/huangxiaolong.jpg" },
         { "name": "陈智扬", "role": "PhD Student", "grade": "二年级", "email": "zhiyangchen@stu.pku.edu.cn", "avatar": "/img/people/chenzhiyang.jpg" },
         { "name": "王浩然", "role": "PhD Student", "grade": "一年级", "email": "wanghaoran1010@stu.pku.edu.cn", "avatar": "/img/people/wanghaoran.jpg" },
         { "name": "潘重阳", "role": "PhD Student", "grade": "一年级", "email": "pancy2021@stu.pku.edu.cn", "avatar": "/img/people/panchongyang.jpg" },
