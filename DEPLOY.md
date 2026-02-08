@@ -1,8 +1,8 @@
-# GitHub Pages 部署指南
+# GitHub Pages Deployment Guide
 
-## 方法一：使用部署脚本（推荐）
+## Method 1: Using the Deploy Script (Recommended)
 
-### 步骤 1：构建并准备部署
+### Step 1: Build and Prepare for Deployment
 ```bash
 # macOS/Linux
 ./deploy.sh
@@ -11,82 +11,82 @@
 deploy.bat
 ```
 
-### 步骤 2：提交并推送到 GitHub
+### Step 2: Commit and Push to GitHub
 ```bash
 git add .
 git commit -m "Deploy to GitHub Pages"
 git push origin main
 ```
 
-### 步骤 3：在 GitHub 配置 Pages
-1. 打开仓库页面：https://github.com/pkuaiweb/pkuaiweb.github.io
-2. 点击 **Settings**（设置）
-3. 左侧菜单找到 **Pages**
-4. 在 **Source** 下选择：
+### Step 3: Configure Pages on GitHub
+1. Open the repository page: https://github.com/pkuaiweb/pkuaiweb.github.io
+2. Click **Settings**
+3. Find **Pages** in the left sidebar
+4. Under **Source**, select:
    - **Branch**: `main`
    - **Folder**: `/docs`
-5. 点击 **Save**（保存）
+5. Click **Save**
 
-### 步骤 4：等待部署完成
-- GitHub 会自动部署，通常需要 1-3 分钟
-- 部署完成后，网站地址为：**https://pkuaiweb.github.io/**
+### Step 4: Wait for Deployment to Complete
+- GitHub will deploy automatically, usually within 1-3 minutes
+- Once deployed, the site will be available at: **https://pkuaiweb.github.io/**
 
 ---
 
-## 方法二：手动构建部署
+## Method 2: Manual Build and Deploy
 
-### 1. 构建项目
+### 1. Build the Project
 ```bash
 npm run build
 ```
 
-### 2. 创建 .nojekyll 文件
+### 2. Create .nojekyll File
 ```bash
 cd docs
 touch .nojekyll
 cd ..
 ```
 
-> **为什么需要 .nojekyll？**
-> GitHub Pages 默认使用 Jekyll 处理文件，会忽略 `_` 开头的文件（如 `_plugin-vue_export-helper.js`）。添加 `.nojekyll` 可以禁用 Jekyll，让所有文件正常加载。
+> **Why is .nojekyll needed?**
+> GitHub Pages uses Jekyll by default to process files, which ignores files starting with `_` (e.g., `_plugin-vue_export-helper.js`). Adding `.nojekyll` disables Jekyll so all files load correctly.
 
-### 3. 提交并推送
+### 3. Commit and Push
 ```bash
 git add .
 git commit -m "Build for deployment"
 git push origin main
 ```
 
-### 4. 配置 GitHub Pages（同上）
+### 4. Configure GitHub Pages (same as above)
 
 ---
 
-## 验证部署
+## Verify Deployment
 
-部署成功后，访问 https://pkuaiweb.github.io/ 应该能看到网站。
+After successful deployment, visit https://pkuaiweb.github.io/ to see the site.
 
-如果遇到问题：
-1. 检查 GitHub Actions 是否成功（仓库 > Actions 标签）
-2. 确认 `docs/.nojekyll` 文件存在
-3. 检查浏览器控制台是否有 404 错误
+If you encounter issues:
+1. Check if GitHub Actions succeeded (Repository > Actions tab)
+2. Confirm `docs/.nojekyll` file exists
+3. Check browser console for 404 errors
 
 ---
 
-## 后续更新流程
+## Subsequent Update Workflow
 
-每次修改代码后：
+After each code change:
 ```bash
-./deploy.sh                           # 重新构建
+./deploy.sh                           # Rebuild
 git add .
 git commit -m "Update content"
-git push origin main                   # GitHub Pages 自动更新
+git push origin main                   # GitHub Pages updates automatically
 ```
 
 ---
 
-## 项目配置说明
+## Project Configuration Notes
 
-项目已配置：
-- ✅ `vite.config.js` 中 `base: './'` - 支持相对路径
-- ✅ `build.outDir: 'docs'` - 构建到 docs 目录
-- ✅ `createWebHashHistory()` - 使用 hash 路由，无需服务器端配置
+The project is configured with:
+- `vite.config.js`: `base: './'` - supports relative paths
+- `build.outDir: 'docs'` - builds to docs directory
+- `createWebHashHistory()` - uses hash routing, no server-side configuration needed

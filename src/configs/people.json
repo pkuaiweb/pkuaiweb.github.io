@@ -3,7 +3,6 @@
   "principalInvestigatorTitle": "Principal Investigator",
   "principalInvestigator": {
     "name": "Yun Ma",
-    "nameChinese": "马云",
     "role": "Assistant Professor",
     "bio": "Dr. Yun Ma is an Assistant Professor at the School of Artificial Intelligence, Peking University. His research focuses on intelligent system software, web system design and optimization, and mobile computing systems. He has published over 40 papers in top-tier conferences and journals including WWW, FSE, and ICSE.",
     "email": "mayun@pku.edu.cn",
@@ -14,34 +13,34 @@
     {
       "title": "PhD Students",
       "people": [
-        { "name": "刘牧耕", "role": "PhD Student", "grade": "四年级", "email": "lmg@pku.edu.cn", "website": "http://morgen52.github.io", "avatar": "/img/people/liumugeng.jpg" },
-        { "name": "申海洋", "role": "PhD Student", "grade": "四年级", "email": "hiyoungshen@gmail.com", "website": "https://eachsheep.space", "avatar": "/img/people/shenhaiyang.jpg" },
-        { "name": "韩宇栋", "role": "PhD Student", "grade": "四年级", "email": "hanyd@pku.edu.cn", "website": "http://hanyd.site", "avatar": "/img/people/hanyudong.jpg" },
-        { "name": "井文淳", "role": "PhD Student", "grade": "三年级", "email": "jingwenchun@stu.pku.edu.cn", "avatar": "/img/people/jingwenchun.jpg" },
-        { "name": "黄小龙", "role": "PhD Student", "grade": "三年级", "email": "h.xl@pku.edu.cn", "avatar": "/img/people/huangxiaolong.jpg" },
-        { "name": "陈智扬", "role": "PhD Student", "grade": "二年级", "email": "zhiyangchen@stu.pku.edu.cn", "avatar": "/img/people/chenzhiyang.jpg" },
-        { "name": "王浩然", "role": "PhD Student", "grade": "一年级", "email": "wanghaoran1010@stu.pku.edu.cn", "avatar": "/img/people/wanghaoran.jpg" },
-        { "name": "潘重阳", "role": "PhD Student", "grade": "一年级", "email": "pancy2021@stu.pku.edu.cn", "avatar": "/img/people/panchongyang.jpg" },
-        { "name": "安锐博", "role": "PhD Student", "grade": "零年级", "email": "arbpku@stu.pku.edu.cn", "avatar": "/img/people/anruibo.jpg" },
-        { "name": "刘邵飞", "role": "PhD Student", "grade": "零年级", "email": "shaofeiliu04@gmail.com", "avatar": "/img/people/liushaofei.jpg" }
+        { "name": "Mugeng Liu", "role": "PhD Student", "grade": "4th Year", "email": "lmg@pku.edu.cn", "website": "http://morgen52.github.io", "avatar": "/img/people/liumugeng.jpg" },
+        { "name": "Haiyang Shen", "role": "PhD Student", "grade": "4th Year", "email": "hiyoungshen@gmail.com", "website": "https://eachsheep.space", "avatar": "/img/people/shenhaiyang.jpg" },
+        { "name": "Yudong Han", "role": "PhD Student", "grade": "4th Year", "email": "hanyd@pku.edu.cn", "website": "http://hanyd.site", "avatar": "/img/people/hanyudong.jpg" },
+        { "name": "Wenchun Jing", "role": "PhD Student", "grade": "3rd Year", "email": "jingwenchun@stu.pku.edu.cn", "avatar": "/img/people/jingwenchun.jpg" },
+        { "name": "Xiaolong Huang", "role": "PhD Student", "grade": "3rd Year", "email": "h.xl@pku.edu.cn", "avatar": "/img/people/huangxiaolong.jpg" },
+        { "name": "Zhiyang Chen", "role": "PhD Student", "grade": "2nd Year", "email": "zhiyangchen@stu.pku.edu.cn", "avatar": "/img/people/chenzhiyang.jpg" },
+        { "name": "Haoran Wang", "role": "PhD Student", "grade": "1st Year", "email": "wanghaoran1010@stu.pku.edu.cn", "avatar": "/img/people/wanghaoran.jpg" },
+        { "name": "Chongyang Pan", "role": "PhD Student", "grade": "1st Year", "email": "pancy2021@stu.pku.edu.cn", "avatar": "/img/people/panchongyang.jpg" },
+        { "name": "Ruibo An", "role": "PhD Student", "grade": "Incoming", "email": "arbpku@stu.pku.edu.cn", "avatar": "/img/people/anruibo.jpg" },
+        { "name": "Shaofei Liu", "role": "PhD Student", "grade": "Incoming", "email": "shaofeiliu04@gmail.com", "avatar": "/img/people/liushaofei.jpg" }
       ]
     },
     {
       "title": "Master Students",
       "people": [
-        { "name": "赵子豪", "role": "Master Student", "grade": "三年级", "email": "zihao.zhao@stu.pku.edu.cn", "avatar": "/img/people/zhaozihao.jpg" },
-        { "name": "董欣然", "role": "Master Student", "grade": "三年级", "email": "dongxinran0805@gmail.com", "website": "http://007DXR.github.io", "avatar": "/img/people/dongxinran.jpg" },
-        { "name": "邵子建", "role": "Master Student", "grade": "二年级", "email": "szj_ngu@stu.pku.edu.cn", "avatar": "/img/people/shaozijian.jpg" },
-        { "name": "李硕祺", "role": "Master Student", "grade": "一年级", "email": "2501210605@stu.pku.edu.cn", "avatar": "/img/people/lishuoqi.jpg" },
-        { "name": "李艳丽", "role": "Master Student", "grade": "一年级", "email": "gloria_404@126.com", "avatar": "/img/people/liyanli.jpg" },
-        { "name": "严子翼", "role": "Master Student", "grade": "零年级", "email": "ziyiyan1015@163.com", "avatar": "/img/people/yanziyi.jpg" },
-        { "name": "吉喆", "role": "Master Student", "grade": "零年级", "email": "jizhe@stu.pku.edu.cn", "avatar": "/img/people/jizhe.jpg" }
+        { "name": "Zihao Zhao", "role": "Master Student", "grade": "3rd Year", "email": "zihao.zhao@stu.pku.edu.cn", "avatar": "/img/people/zhaozihao.jpg" },
+        { "name": "Xinran Dong", "role": "Master Student", "grade": "3rd Year", "email": "dongxinran0805@gmail.com", "website": "http://007DXR.github.io", "avatar": "/img/people/dongxinran.jpg" },
+        { "name": "Zijian Shao", "role": "Master Student", "grade": "2nd Year", "email": "szj_ngu@stu.pku.edu.cn", "avatar": "/img/people/shaozijian.jpg" },
+        { "name": "Shuoqi Li", "role": "Master Student", "grade": "1st Year", "email": "2501210605@stu.pku.edu.cn", "avatar": "/img/people/lishuoqi.jpg" },
+        { "name": "Yanli Li", "role": "Master Student", "grade": "1st Year", "email": "gloria_404@126.com", "avatar": "/img/people/liyanli.jpg" },
+        { "name": "Ziyi Yan", "role": "Master Student", "grade": "Incoming", "email": "ziyiyan1015@163.com", "avatar": "/img/people/yanziyi.jpg" },
+        { "name": "Zhe Ji", "role": "Master Student", "grade": "Incoming", "email": "jizhe@stu.pku.edu.cn", "avatar": "/img/people/jizhe.jpg" }
       ]
     },
     {
       "title": "Interns",
       "people": [
-        { "name": "周润桂", "role": "Intern", "grade": "其他年级", "email": "2300011366@stu.pku.edu.cn", "avatar": "/img/people/zhourungui.jpg" }
+        { "name": "Rungui Zhou", "role": "Intern", "grade": "Other", "email": "2300011366@stu.pku.edu.cn", "avatar": "/img/people/zhourungui.jpg" }
       ]
     },
     {

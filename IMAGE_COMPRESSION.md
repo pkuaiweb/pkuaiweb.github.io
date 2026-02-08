@@ -1,84 +1,84 @@
-# 图片压缩工具使用说明
+# Image Compression Tool Guide
 
-## 功能特性
+## Features
 
-✅ **智能压缩**：只压缩大于 100KB 的图片
-✅ **避免重复**：自动记录已压缩的图片，不会重复压缩
-✅ **统一尺寸**：将过大图片调整到最大宽度 800px（适合头像）
-✅ **高质量**：JPEG 质量 80，保持清晰度
-✅ **详细日志**：记录每张图片的压缩情况和节省空间
-✅ **安全可靠**：只有压缩后更小才会替换原文件
+- **Smart Compression**: Only compresses images larger than 100KB
+- **Avoids Duplicates**: Automatically records compressed images to prevent re-compression
+- **Uniform Sizing**: Resizes oversized images to a max width of 800px (suitable for avatars)
+- **High Quality**: JPEG quality 80, maintaining clarity
+- **Detailed Logging**: Records compression details and space savings for each image
+- **Safe & Reliable**: Only replaces the original file if the compressed version is smaller
 
-## 安装依赖
+## Install Dependencies
 
-首次使用需要安装 sharp 图片处理库：
+Install the sharp image processing library before first use:
 
 ```bash
 npm install
 ```
 
-## 使用方法
+## Usage
 
-### 压缩所有图片
+### Compress All Images
 ```bash
 npm run compress-images
 ```
 
-### 工具会自动：
-1. 扫描 `public/img` 目录下所有 `.jpg`、`.jpeg`、`.png` 图片
-2. 跳过小于 100KB 的图片
-3. 跳过已经压缩过的图片（记录在 `.image-compression-log.json`）
-4. 压缩大图片：
-   - 宽度超过 800px 的调整到 800px
-   - JPEG 质量设置为 80
-   - PNG 使用最大压缩级别
-5. 只有压缩后更小才替换原文件
-6. 显示详细的压缩报告
+### The tool will automatically:
+1. Scan all `.jpg`, `.jpeg`, `.png` images under the `public/img` directory
+2. Skip images smaller than 100KB
+3. Skip previously compressed images (recorded in `.image-compression-log.json`)
+4. Compress large images:
+   - Resize images wider than 800px to 800px
+   - Set JPEG quality to 80
+   - Use maximum compression level for PNG
+5. Only replace the original if the compressed version is smaller
+6. Display a detailed compression report
 
-## 输出示例
+## Example Output
 
 ```
-🖼️  Image Compression Tool
+Image Compression Tool
 
-📁 Scanning directory: ./public/img
-📏 Target max width: 800px
-🎯 JPEG quality: 80
-📦 Min size to compress: 100.0 KB
+Scanning directory: ./public/img
+Target max width: 800px
+JPEG quality: 80
+Min size to compress: 100.0 KB
 
-📋 Loaded compression log (0 files previously compressed)
+Loaded compression log (0 files previously compressed)
 
-🔍 Found 21 images
+Found 21 images
 
-⏭️  Skipped (too small): public/img/placeholder.png (6.2 KB)
-✅ Compressed: public/img/people/liumugeng.jpg
-   2.7 MB → 156.3 KB (saved 94.2%)
-✅ Compressed: public/img/people/jizhe.jpg
-   1.6 MB → 142.8 KB (saved 91.1%)
+Skipped (too small): public/img/placeholder.png (6.2 KB)
+Compressed: public/img/people/liumugeng.jpg
+   2.7 MB -> 156.3 KB (saved 94.2%)
+Compressed: public/img/people/jizhe.jpg
+   1.6 MB -> 142.8 KB (saved 91.1%)
 
-════════════════════════════════════════════════════════════
-📊 Compression Summary
-════════════════════════════════════════════════════════════
+============================================================
+Compression Summary
+============================================================
 Total images scanned: 21
-✅ Compressed: 15
-⏭️  Skipped: 6
-❌ Errors: 0
+Compressed: 15
+Skipped: 6
+Errors: 0
 
-💾 Total space saved: 8.2 MB (88.5%)
+Total space saved: 8.2 MB (88.5%)
    Before: 9.3 MB
    After: 1.1 MB
 
-✨ Done! Compression log saved to: .image-compression-log.json
+Done! Compression log saved to: .image-compression-log.json
 ```
 
-## 压缩记录
+## Compression Log
 
-工具会在项目根目录生成 `.image-compression-log.json` 文件，记录：
-- 每张图片的压缩信息
-- 原始大小和压缩后大小
-- 节省的百分比
-- 压缩时间戳
+The tool generates a `.image-compression-log.json` file in the project root, recording:
+- Compression info for each image
+- Original and compressed sizes
+- Saved percentage
+- Compression timestamp
 
-示例：
+Example:
 ```json
 {
   "compressed": {
@@ -93,37 +93,37 @@ Total images scanned: 21
 }
 ```
 
-## 配置参数
+## Configuration Parameters
 
-在 `compress-images.js` 中可以调整：
+Adjustable in `compress-images.js`:
 
-| 参数 | 默认值 | 说明 |
-|------|--------|------|
-| `TARGET_MAX_WIDTH` | 800 | 图片最大宽度（像素） |
-| `QUALITY` | 80 | JPEG 压缩质量（1-100） |
-| `MIN_SIZE_TO_COMPRESS` | 100KB | 最小压缩文件大小 |
+| Parameter | Default | Description |
+|-----------|---------|-------------|
+| `TARGET_MAX_WIDTH` | 800 | Max image width (pixels) |
+| `QUALITY` | 80 | JPEG compression quality (1-100) |
+| `MIN_SIZE_TO_COMPRESS` | 100KB | Minimum file size to compress |
 
-## 重新压缩所有图片
+## Re-compress All Images
 
-如果需要用新参数重新压缩所有图片：
+To re-compress all images with new parameters:
 ```bash
-# 删除压缩记录
+# Delete compression log
 rm .image-compression-log.json
 
-# 重新运行压缩
+# Re-run compression
 npm run compress-images
 ```
 
-## 注意事项
+## Notes
 
-⚠️ **原文件会被覆盖**：压缩会直接替换原图片，建议先提交到 Git
-⚠️ **sharp 库依赖**：需要编译原生模块，首次安装可能较慢
-⚠️ **渐进式运行**：可以多次运行，只会处理新增的图片
+- **Original files will be overwritten**: Compression replaces the original image directly. It's recommended to commit to Git first.
+- **sharp library dependency**: Requires compiling native modules; the first installation may be slow.
+- **Incremental runs**: Can be run multiple times; only newly added images will be processed.
 
-## 与部署流程集成
+## Integration with Deployment Workflow
 
-建议在部署前运行压缩：
+It's recommended to run compression before deployment:
 ```bash
-npm run compress-images    # 压缩图片
-./deploy.sh                # 构建并部署
+npm run compress-images    # Compress images
+./deploy.sh                # Build and deploy
 ```

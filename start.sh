@@ -1,28 +1,28 @@
 #!/bin/bash
 
-# 一键启动本地开发服务器脚本
-# 用途：快速启动项目并在浏览器中预览网页
+# One-click local development server startup script
+# Purpose: Quickly start the project and preview the website in a browser
 
-echo "🚀 正在启动 PKU AI Web 本地开发服务器..."
+echo "Starting PKU AI Web local development server..."
 echo ""
 
-# 检查 node_modules 是否存在
+# Check if node_modules exists
 if [ ! -d "node_modules" ]; then
-    echo "📦 首次运行，正在安装依赖..."
+    echo "First run detected, installing dependencies..."
     npm install
     echo ""
 fi
 
-echo "✅ 启动开发服务器..."
-echo "💡 服务器启动后会自动打开浏览器"
-echo "💡 按 Ctrl+C 可以停止服务器"
+echo "Starting development server..."
+echo "The browser will open automatically after the server starts"
+echo "Press Ctrl+C to stop the server"
 echo ""
 echo "-----------------------------------"
 echo ""
 
-# 启动开发服务器
+# Start the development server
 npm run dev
 
-# 如果服务器被停止
+# If the server was stopped
 echo ""
-echo "👋 开发服务器已停止"
+echo "Development server stopped"

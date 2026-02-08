@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# 构建项目
+# Build the project
 echo "Building the project..."
 npm run build
 
-# 进入构建输出目录
+# Enter the build output directory
 cd docs
 
-# 添加 .nojekyll 文件（重要：防止 GitHub Pages 忽略下划线开头的文件）
+# Add .nojekyll file (important: prevents GitHub Pages from ignoring files starting with underscore)
 touch .nojekyll
 
 echo "Build complete! Files are in the 'docs' directory."

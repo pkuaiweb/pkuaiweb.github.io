@@ -1,26 +1,26 @@
 @echo off
 chcp 65001 >nul
 echo.
-echo 🚀 正在启动 PKU AI Web 本地开发服务器...
+echo Starting PKU AI Web local development server...
 echo.
 
-REM 检查 node_modules 是否存在
+REM Check if node_modules exists
 if not exist "node_modules\" (
-    echo 📦 首次运行，正在安装依赖...
+    echo First run detected, installing dependencies...
     call npm install
     echo.
 )
 
-echo ✅ 启动开发服务器...
-echo 💡 服务器启动后会自动打开浏览器
-echo 💡 按 Ctrl+C 可以停止服务器
+echo Starting development server...
+echo The browser will open automatically after the server starts
+echo Press Ctrl+C to stop the server
 echo.
 echo -----------------------------------
 echo.
 
-REM 启动开发服务器
+REM Start the development server
 call npm run dev
 
 echo.
-echo 👋 开发服务器已停止
+echo Development server stopped
 pause
