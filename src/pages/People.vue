@@ -11,8 +11,8 @@
           <p class="role">{{ pi.role }}</p>
           <p class="bio">{{ pi.bio }}</p>
           <div class="links">
-            <a :href="pi.email">Email</a>
-            <a :href="pi.website">Website</a>
+            <a v-if="pi.email" :href="`mailto:${pi.email}`">Email</a>
+            <a v-if="pi.website" :href="pi.website" target="_blank">Website</a>
           </div>
         </div>
       </div>
@@ -25,6 +25,10 @@
           <div class="avatar-small" :style="{ backgroundImage: person.avatar ? `url(${person.avatar})` : '' }"></div>
           <h4>{{ person.name }}</h4>
           <p>{{ person.role }}</p>
+          <div class="links-small" v-if="person.email || person.website">
+            <a v-if="person.email" :href="`mailto:${person.email}`" title="Email">✉️</a>
+            <a v-if="person.website" :href="person.website" target="_blank" title="Website">🌐</a>
+          </div>
         </div>
       </div>
     </section>
@@ -55,6 +59,9 @@ const { title, principalInvestigatorTitle, principalInvestigator: pi, sections }
 .person-card-small:hover { border-color: #000; }
 .avatar-small { width: 80px; height: 80px; border-radius: 50%; background: #f0f0f0 center/cover no-repeat; margin: 0 auto 16px; }
 .person-card-small h4 { font-size: 16px; font-weight: 400; margin: 0 0 8px; }
-.person-card-small p { font-size: 13px; color: #666; margin: 0; }
+.person-card-small p { font-size: 13px; color: #666; margin: 0 0 12px; }
+.links-small { display: flex; gap: 12px; justify-content: center; margin-top: 12px; }
+.links-small a { font-size: 18px; text-decoration: none; transition: transform 0.2s; display: inline-block; }
+.links-small a:hover { transform: scale(1.2); }
 </style>
 

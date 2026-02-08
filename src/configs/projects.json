@@ -2,39 +2,21 @@
   "title": "Projects",
   "items": [
     {
-      "title": "Project Title",
-      "desc": "Project description and details",
-      "link": "http://example.com/",
+      "id": "intelligent-system-software",
+      "title": "Intelligent System Software",
+      "desc": "Developing smart software systems that adapt and learn",
       "img": "/img/placeholder.png"
     },
     {
-      "title": "Project Title",
-      "desc": "Project description and details",
-      "link": "http://example.com/",
+      "id": "web-system-design-optimization",
+      "title": "Web System Design & Optimization",
+      "desc": "Creating efficient and scalable web architectures",
       "img": "/img/placeholder.png"
     },
     {
-      "title": "Project Title",
-      "desc": "Project description and details",
-      "link": "http://example.com/",
-      "img": "/img/placeholder.png"
-    },
-    {
-      "title": "Project Title",
-      "desc": "Project description and details",
-      "link": "http://example.com/",
-      "img": "/img/placeholder.png"
-    },
-    {
-      "title": "Project Title",
-      "desc": "Project description and details",
-      "link": "http://example.com/",
-      "img": "/img/placeholder.png"
-    },
-    {
-      "title": "Project Title",
-      "desc": "Project description and details",
-      "link": "http://example.com/",
+      "id": "mobile-computing-systems",
+      "title": "Mobile Computing Systems",
+      "desc": "Building next-generation mobile applications and platforms",
       "img": "/img/placeholder.png"
     }
   ]

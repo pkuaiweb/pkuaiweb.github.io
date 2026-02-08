@@ -1,10 +1,13 @@
 <template>
   <div class="app">
     <header class="header">
-      <div class="left">
-        <div class="logo">{{ logo }}</div>
+      <RouterLink to="/" class="left">
+        <div class="logo" v-if="logo.startsWith('/')">
+          <img :src="logo" :alt="labName" />
+        </div>
+        <div class="logo" v-else>{{ logo }}</div>
         <span class="name">{{ labName }}</span>
-      </div>
+      </RouterLink>
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/projects">Projects</RouterLink>
@@ -27,8 +30,10 @@ const { logo, labName } = appConfig
 <style scoped>
 .app { min-height: 100vh; }
 .header { display: flex; align-items: center; justify-content: space-between; padding: 20px 32px; border-bottom: 1px solid #f0f0f0; }
-.left { display: flex; align-items: center; gap: 12px; }
-.logo { width: 40px; height: 40px; border: 1px solid #000; display: grid; place-items: center; font-weight: 300; font-size: 18px; }
+.left { display: flex; align-items: center; gap: 12px; text-decoration: none; transition: opacity 0.2s; }
+.left:hover { opacity: 0.7; }
+.logo { width: 40px; height: 40px; display: grid; place-items: center; font-weight: 300; font-size: 18px; }
+.logo img { width: 100%; height: 100%; object-fit: contain; }
 .name { font-size: 16px; font-weight: 400; }
 nav { display: flex; gap: 32px; }
 nav a { 

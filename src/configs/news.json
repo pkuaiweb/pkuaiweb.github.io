@@ -1,0 +1,16 @@
+[
+  {
+    "id": "welcome-to-pku-ai-web-lab",
+    "date": "2026-02",
+    "title": "Welcome to PKU AI Web Lab",
+    "excerpt": "We are excited to announce the official launch of PKU AI Web Lab.",
+    "content": "# Welcome to PKU AI Web Lab\n\nWe are excited to announce the official launch of PKU AI Web Lab at the School of Artificial Intelligence, Peking University.\n\n## Our Mission\n\nOur lab focuses on advancing intelligent web systems and software engineering through cutting-edge research in:\n\n- **Intelligent System Software**: Developing smart software systems that adapt and learn\n- **Web System Design & Optimization**: Creating efficient and scalable web architectures\n- **Mobile Computing Systems**: Building next-generation mobile applications and platforms\n\n## Join Us\n\nWe welcome talented students and researchers who are passionate about web technologies and artificial intelligence to join our team.\n\nFor more information, please contact Prof. Yun Ma at mayun@pku.edu.cn"
+  },
+  {
+    "id": "lab-website-launched",
+    "date": "2026-01",
+    "title": "Lab website officially launched",
+    "excerpt": "Our new lab website is now live, showcasing our research and team.",
+    "content": "# Lab Website Officially Launched\n\nWe are pleased to announce that our lab website has been officially launched!\n\n## Features\n\nThe website includes:\n\n- **Team**: Meet our faculty and students\n- **Projects**: Explore our ongoing research projects\n- **Publications**: Browse our latest papers and publications\n- **Awards**: View our achievements and recognitions\n\n## Technology Stack\n\nOur website is built using modern web technologies:\n- Vue.js 3\n- Vite\n- Vue Router\n\nVisit our website regularly for updates on our latest research and news.\n\nStay connected with PKU AI Web Lab!"
+  }
+]
