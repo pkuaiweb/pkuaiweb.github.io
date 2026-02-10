@@ -1,4 +1,4 @@
-import{_ as h,c as a,b as t,d as s,w as o,u as r,R as l,t as c,F as v,r as y,i as p,j as w,f as d,g as m}from"./index-BHRLuEv6.js";const S=[{id:"intelligent-system-software",title:"Intelligent System Software",shortDesc:"Developing smart software systems that adapt and learn",description:"Our research in intelligent system software focuses on creating adaptive and intelligent software systems that can learn from their environment and optimize their behavior automatically.",content:`# Intelligent System Software
+import{_ as h,c as a,b as t,d as s,w as o,u as r,R as l,t as c,F as v,r as y,i as p,j as w,f as d,g as m}from"./index-CtfIjgfb.js";const S=[{id:"intelligent-system-software",title:"Intelligent System Software",shortDesc:"Developing smart software systems that adapt and learn",description:"Our research in intelligent system software focuses on creating adaptive and intelligent software systems that can learn from their environment and optimize their behavior automatically.",content:`# Intelligent System Software
 
 ## Overview
 

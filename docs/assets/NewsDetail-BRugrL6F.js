@@ -1,4 +1,4 @@
-import{_ as h,c as u,b as n,d as a,w as o,u as i,R as l,t as d,i as r,j as g,f as b,g as c}from"./index-BHRLuEv6.js";const w=[{id:"welcome-to-pku-ai-web-lab",date:"2026-02",title:"Welcome to PKU AI Web Lab",excerpt:"We are excited to announce the official launch of PKU AI Web Lab.",content:`# Welcome to PKU AI Web Lab
+import{_ as h,c as u,b as n,d as a,w as o,u as i,R as l,t as d,i as r,j as g,f as b,g as c}from"./index-CtfIjgfb.js";const w=[{id:"welcome-to-pku-ai-web-lab",date:"2026-02",title:"Welcome to PKU AI Web Lab",excerpt:"We are excited to announce the official launch of PKU AI Web Lab.",content:`# Welcome to PKU AI Web Lab
 
 We are excited to announce the official launch of PKU AI Web Lab at the School of Artificial Intelligence, Peking University.
 
